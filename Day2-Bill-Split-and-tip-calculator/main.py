@@ -21,5 +21,6 @@ float_tip = float(tip)
 total_result = float(float_tip / 100 * float_total + float_total)
 split_result = float(total_result / float_split)
 rounded_result = round(split_result, 2)
+rounded_result = "{:.2f}".format(rounded_result)
 
 print(f"Cost that should be split is: $ {rounded_result}")
